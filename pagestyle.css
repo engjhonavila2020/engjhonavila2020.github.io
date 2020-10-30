@@ -1,15 +1,32 @@
 /* CSS */
 
 /* paragraph CSS */
+
+@font-face {
+    font-family: Blox2;
+    src: url(Blox2.ttf);
+  }
+
+@font-face {
+    font-family: ChessType;
+    src: url(ChessType.ttf);
+  }
+
+  @font-face {
+    font-family: manaspc;
+    src: url(manaspc.ttf);
+  }
+
 p {
-    text-align: justify;
-    font-family: 'Crimson Text', serif;
-    font-size: 18px;
+    text-align: left;
+    font-family: ChessType;
+    font-size: 26px;
+    color:rgb(0,255,255);
     }
     
     /* Master of Wisdom paragraph CSS */
     p.masterOfWisdom {
-    font-family: 'Dancing Script', cursive;
+    font-family: manaspc;
     font-size: 30px;
     }
     
@@ -20,8 +37,18 @@ p {
     
     /* header CSS */
     h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: Blox2;
+    color:rgb(255,0,255);
+    font-size: 90px;
+    
     }
+
+    h2 {
+      font-family: manaspc;
+      color:rgb(255,0,255);
+      font-size: 40px;
+      
+      }
     
     /* img CSS */
     img.responsive-img {
@@ -33,4 +60,38 @@ p {
 
     body {
      background-color: black;   
+    }
+
+    a{
+      font-family: ChessType;
+      padding: 15px 25px;
+      font-size: 40px;
+      color:white;
+    }
+
+    #navbar{
+      width: 100%;
+      background-color: grey;
+
+    }
+
+
+    ul {
+      list-style-type: square;
+      margin: 0;
+      white-space: nowrap;
+      padding: 0;
+      overflow: hidden;
+     
+    }
+    
+    li {
+      float: left;
+
+    }
+    
+    li a {
+    
+      padding: 40px 70px;
+      background-color: #3a3a3a;
     }
