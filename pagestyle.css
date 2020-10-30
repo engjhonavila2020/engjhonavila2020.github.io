@@ -30,3 +30,7 @@ p {
     float: left;
     margin-right: 1rem;
     }
+
+    body {
+     background-color: black;   
+    }
