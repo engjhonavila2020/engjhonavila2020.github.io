@@ -24,41 +24,68 @@
 <style>
 /* CSS */
 
-/* paragraph CSS */
-p {
-text-align: justify;
-font-family: 'Crimson Text', serif;
-font-size: 18px;
-}
-
-/* Master of Wisdom paragraph CSS */
-p.masterOfWisdom {
-font-family: 'Dancing Script', cursive;
-font-size: 30px;
-}
-
 /* Brand Logo Icon CSS */
 i.large.material-icons {
 font-size: 60px;
 }
 
-/* header CSS */
+/* Upper Horizontal Line CSS */
+#upper-horizontal-line {
+width: 30%;
+}
+
+/* Header CSS */
 h1 {
 font-family: 'Dancing Script', cursive;
 }
 
-/* img CSS */
-img.responsive-img {
+/* First Paragraph CSS */
+#first-paragraph{
+text-align: justify;
+font-family: 'Crimson Text', serif;
+font-size: 18px;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+/* Second Paragraph CSS */
+#second-paragraph{
+text-align: justify;
+font-family: 'Crimson Text', serif;
+font-size: 18px;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+/* First img CSS */
+#first-img {
+max-width: 50%;
+height: auto;
+float: right;
+margin-left: 3rem;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+/* Second img CSS */
+#second-img{
 max-width: 50%;
 height: auto;
 float: left;
-margin-right: 1rem;
+margin-right: 2rem;
+margin-top: 3rem;
+margin-bottom: 4rem;
+}
+
+/* Middle Horizontal Line CSS */
+#middle-horizontal-line {
+width: 10rem;
+margin-bottom: 2rem;
 }
 
 </style>
 
 <div>
-
 <!-- Materialize CSS Navbar -->
 <div class="navbar-fixed">
 <nav class="grey darken-3">
@@ -75,38 +102,17 @@ margin-right: 1rem;
 </ul>
 </div>
 </div>
-</nav> 
+</nav>
 </div>
 <div class="container">
-<h1 class="center">
-“Don't listen to what they say. Go see.“
-</h1>
+<h1>Our Team</h1>
+<hr id="upper-horizontal-line" class="left">
 
-<!-- Photo credit to James Eades -->
-<img class="responsive-img" src="https://images.unsplash.com/photo-1550757749-617f5cd8b197?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1402&q=80" alt="Antarctica">
 <!-- Change me -->
-<p>
-False ribs, between the gluteal muscles, rib, chest, ankle, elbow and ear region,
-frontal knee, foot, dorsal, shoulder blades, above and between, the hips and breast,
-nose, back of body, tongue side of foot, dorsal, shoulder, blades, above and toes
-thigh, buttock, great toe, lowest part of foot, dorsal, shoulder blades, above toes
-false ribs, between the false ribs, between the false ribs, between teeth.
-</p>
+<img id="first-img" class="responsive-img" src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="people">
+
 <!-- Change me -->
-<p>
-Breast bone, arm pit, belly button, muscular part of head, chest, ankle, elbow, ear,
-head, chest, breastbone, navel, belly, front of head, chest, ankle, elbow, ear region,
-nose, back of body, tongue side of foot, dorsal, shoulder, blades, above and toes
-anterior region of upper arm pit, belly button, muscular part of teeth, chin, toes, heart
-false ribs, between the false ribs, between the false ribs, between teeth.
-</p>
-<!-- Change me -->
-<p>
-Gluteal muscles, rib, chest, ankle, elbow and ear region, frontal knee, foot, dorsal,
-frontal knee, foot, dorsal, shoulder blades, above and between, the hips and breast,
-nose, back of body, tongue side of foot, dorsal, shoulder, blades, above and toes
-thigh, buttock, great toe, lowest part of foot, dorsal, shoulder blades, above toes
-false ribs, between the false ribs, between the false ribs, between teeth.
+<p id="first-paragraph">
 False ribs, between the gluteal muscles, rib, chest, ankle, elbow and ear region,
 frontal knee, foot, dorsal, shoulder blades, above and between, the hips and breast,
 nose, back of body, tongue side of foot, dorsal, shoulder, blades, above and toes
@@ -118,8 +124,25 @@ nose, back of body, tongue side of foot, dorsal, shoulder, blades, above and toe
 thigh, buttock, great toe, lowest part of foot, dorsal, shoulder blades, above toes
 false ribs, between the false ribs, between the false ribs, between teeth.
 </p>
-<p class="right masterOfWisdom">"  The Master of Wisdom "</p>
-</div> 
+
+<hr id="middle-horizontal-line">
+<!-- Change me -->
+<!-- Photo credit to rawpixel -->
+<img id="second-img" class="responsive-img" src="https://images.unsplash.com/photo-1533727759431-f1d5252bf2bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+
+<!-- Change me -->
+<p id="second-paragraph">
+False ribs, between the gluteal muscles, rib, chest, ankle, elbow and ear region,
+frontal knee, foot, dorsal, shoulder blades, above and between, the hips and breast,
+nose, back of body, tongue side of foot, dorsal, shoulder, blades, above and toes
+thigh, buttock, great toe, lowest part of foot, dorsal, shoulder blades, above toes
+false ribs, between the false ribs, between the false ribs, between teeth.
+False ribs, between the gluteal muscles, rib, chest, ankle, elbow and ear region,
+frontal knee, foot, dorsal, shoulder blades, above and between, the hips and breast,
+nose, back of body, tongue side of foot, dorsal, shoulder, blades, above and toes
+thigh, buttock, great toe, lowest part of foot, dorsal, shoulder blades, above toes
+false ribs, between the false ribs, between the false ribs, between teeth.
+</p>
 </div>
 </body>
 </html>
