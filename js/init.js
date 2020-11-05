@@ -23,4 +23,5 @@ console.log("get user info");
 var res = userData();
 console.log("Parsing results "+res);
 setAttributes(res);
+
 console.log("Init script loaded");
