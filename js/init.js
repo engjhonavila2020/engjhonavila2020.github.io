@@ -5,7 +5,7 @@
     .then((responseJson=>{
         console.log(responseJson);
         return responseJson;
-    }))
+    }));
     
  };
  
@@ -21,6 +21,6 @@
 console.log("get user info");
 var res = userData();  
 console.log("Parsing results as js "+res);
-setAttributes(res);
+
 
 console.log("Init script loaded");
