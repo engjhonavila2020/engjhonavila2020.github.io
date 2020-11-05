@@ -6,8 +6,9 @@
         console.log(responseJson);
         result=responseJson;
         console.log("=> "+result);
+        return result;
     }))
-    return result;
+    
  };
  
  var setAttributes = function(visitorData){
