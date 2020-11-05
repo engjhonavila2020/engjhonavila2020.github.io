@@ -3,7 +3,7 @@
     fetch("https://ipapi.co/json/")
     .then(response=>response.json())
     .then((responseJson=>{
-        console.log("send response : "+responseJson);
+        console.log(responseJson);
         setAttributes(responseJson);
     }));
     
@@ -18,9 +18,9 @@
         });
     });
 };
-console.log("get user info");
+console.log("get userr info");
 var res = userData();  
-console.log("Parsing results as js "+res);
+
 
 
 console.log("Init script loaded");
