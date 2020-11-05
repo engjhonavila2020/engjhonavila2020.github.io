@@ -20,7 +20,7 @@
     });
 };
 console.log("get user info");
-var res = userData();
+var res = userData(); 
 console.log("Parsing results "+res['city']);
 setAttributes(res);
 
