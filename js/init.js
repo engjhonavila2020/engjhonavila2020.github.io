@@ -1,9 +1,9 @@
  var userData = function(){
-     var result={};
+     var result;
     fetch("https://ipapi.co/json/")
     .then(response=>response.json())
     .then((responseJson=>{
-        console.log(responseJson)
+        console.log(responseJson);
         result=JSON.parse(responseJson);
         console.log("=> "+result);
     }))
