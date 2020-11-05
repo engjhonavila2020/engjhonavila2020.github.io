@@ -18,7 +18,7 @@
         });
     });
 };
-console.log("get user data");
+console.log("get user info");
 var res = userData();
 console.log(res);
 setAttributes(res);
