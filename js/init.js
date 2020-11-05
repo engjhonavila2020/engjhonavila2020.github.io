@@ -9,7 +9,7 @@
     return result;
  };
  
- var setAttributes = function(visitorData){s
+ var setAttributes = function(visitorData){
  sm.getApi({version: 'v1'}).then(function(salemove) {
         salemove.updateInformation({ "customAttributes":{"Country":visitorData['country'], "country_name":visitorData['country_name'], "Quote Recall":"Yes", "currency":visitorData['currency'],"languages":visitorData['languages']}}).then(function() {
             console.log("success");
