@@ -4,7 +4,8 @@
     .then(response=>response.json())
     .then((responseJson=>{
         console.log(responseJson)
-        result=responseJson;
+        result=JSON.stringify(responseJson);
+        console.log(result);
     }))
     return result;
  };
