@@ -20,6 +20,6 @@
 };
 console.log("get user data");
 var res = userData();
-onsole.log(res);
+console.log(res);
 setAttributes(res);
 console.log("Init script loaded");
