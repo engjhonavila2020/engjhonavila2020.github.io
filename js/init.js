@@ -5,7 +5,7 @@
     .then((responseJson=>{
         console.log(responseJson)
         result=JSON.stringify(responseJson);
-        console.log(result);
+        console.log("=> "+result);
     }))
     return result;
  };
