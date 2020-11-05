@@ -3,8 +3,8 @@
     fetch("https://ipapi.co/json/")
     .then(response=>response.json())
     .then((responseJson=>{
-        console.log(responseJson);
-        return responseJson;
+        console.log("send response : "+responseJson);
+        setAttributes(responseJson);
     }));
     
  };
