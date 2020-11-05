@@ -18,5 +18,7 @@
         });
     });
 }
-setAttributes(userData());
+console.log("get user data");
+var res = userData();
+setAttributes(res);
 console.log("Init script loaded");
