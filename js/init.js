@@ -21,7 +21,7 @@
 
 var requestEngagementOnclick = function(){
     sm.getApi({version: 'v1'}).then(function(salemove) {
-        var engagementRequest = salemove.requestEngagement('text');
+        var engagementRequest = salemove.requestEngagement('TEXT');
         engagementRequest.engagementPromise.then(function(engagement) {
           console.log(engagement);
           engagement.chat.sendMessage("Hi from the requestedEngagement");
