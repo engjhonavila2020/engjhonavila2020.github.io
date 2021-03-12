@@ -29,6 +29,14 @@ p {
     font-family: manaspc;
     font-size: 30px;
     }
+
+    p.paraButton:hover{
+      color:rgb(255,0,255);
+    }
+
+    p.paraButton:focus{
+      color:rgb(255,255,255);
+    }
     
     /* Brand Logo Icon CSS */
     i.large.material-icons {
