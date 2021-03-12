@@ -23,7 +23,8 @@ var requestEngagementOnclick = function(){
     sm.getApi({version: 'v1'}).then(function(salemove) {
         var engagementRequest = salemove.requestEngagement('text');
         engagementRequest.engagementPromise.then(function(engagement) {
-         
+          console.log(engagement);
+          engagement.chat.sendMessage("Hi from the requestedEngagement");
         }).catch(function(error) {
           if (error.cause === salemove.ERRORS.OPERATOR_DECLINED) {
             console.log("error: ERRORS.OPERATOR_DECLINED");
