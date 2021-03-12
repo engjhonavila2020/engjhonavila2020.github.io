@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Template Site</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Template Site</title>
 
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- Materialize icons -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-<!-- Google fonts -->
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script" rel="stylesheet">
-<script src="https://api.beta.glia.com/salemove_integration.js"></script>
-<script type="text/javascript" src="js/init.js"></script>
-<link rel="stylesheet" href="pagestyle.css">
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script"
+      rel="stylesheet"
+    />
+    <script src="https://api.beta.glia.com/salemove_integration.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <link rel="stylesheet" href="pagestyle.css" />
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-189789814-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-189789814-1');
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-189789814-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-189789814-1");
+    </script>
+  </head>
+  <body>
+    <div>
+      <div id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
 
-</script>
-</head>
-<body>
 
+      <div class="container">
+        <h1 class="center">The Retro Art Gallery</h1>
 
-<div>
-<div id="navbar">
-    <ul>
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="about.html">Our story</a></li>
-        <li><a href="gallery.html">Gallery</a></li>     
-    </ul>    
-</div>
-<div class="container">
-<h1 class="center">
-The Retro Art Gallery
-</h1>
- 
-<!-- Photo credit to Jhon Av -->
-<img class="responsive-img" src="images/tartu.png" alt="Antarctica">
-<!-- Don't change me -->
-<p>
-Straight from the past, the art of the early computer age makes a comeback as classlical,
-master pieces of digital art.
-</p>
-<div id="imgIcon" >
-    <img src="cubeCollab10-bread.png" alt="alternatetext">
-    <p id="talkText" data-sm-show-media-selection-on="click" href="javascript:void(0);">
-        Let's Talk
-    </p>
-</div> 
-<p class="right masterOfWisdom">" Lien The Alien "</p>
-</div> 
-</div>
-</body>
+        <!-- Photo credit to Jhon Av -->
+        <img class="responsive-img" src="images/tartu.png" alt="Antarctica" />
+        <!-- Don't change me -->
+        <p>
+          Straight from the past, the art of the early computer age makes a
+          comeback as classlical, master pieces of digital art.
+        </p>
+        <div id="imgIcon">
+          <img src="cubeCollab10-bread.png" alt="alternatetext" />
+          <p id="talkText"
+             data-sm-show-media-selection-on="click"
+             href="javascript:void(0);">
+             Let's Talk
+          </p>      
+        </div>
+        <div>
+          <h1>Test JS SDK</h1>
+          <p id="startEng" onclick="requestEngagementOnclick()">Request Engagement</p>
+        </div>
+      
+        <p class="right masterOfWisdom">" Lien The Alien "</p>
+      </div>
+    </div>
+  </body>
 </html>

@@ -18,6 +18,21 @@
         });
     });
 };
+
+var requestEngagementOnclick = function(){
+    sm.getApi({version: 'v1'}).then(function(salemove) {
+        var engagementRequest = salemove.requestEngagement('text');
+        engagementRequest.engagementPromise.then(function(engagement) {
+         
+        }).catch(function(error) {
+          if (error.cause === salemove.ERRORS.OPERATOR_DECLINED) {
+            console.log("error: ERRORS.OPERATOR_DECLINED");
+          } else {
+            console.log("error: "+error);
+          }
+        });
+      });
+}
 console.log("get userr info");
 var res = userData();  
 
