@@ -103,3 +103,21 @@ p {
       padding: 40px 70px;
       background-color: #3a3a3a;
     }
+
+
+    select {
+      font-family: ChessType;
+      font-size: 20px;
+      text-rendering: auto;
+      
+      display: inline-flex;
+      border-image: initial;
+      width: 30%;
+  }
+
+ 
+
+  
+
+    
+    
