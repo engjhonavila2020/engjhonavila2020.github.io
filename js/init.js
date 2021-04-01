@@ -37,11 +37,8 @@ var requestEngagementOnclick = function(){
 
 var requestSetQueue = function() {
   var queueView = document.getElementById("startQue");
+  var engagementView = document.getElementById('engView');
   
- 
-
-  var engagementView = document.createElement('div');
-  document.body.appendChild(engagementView);
 
   sm.getApi({version: 'v1'}).then(function(salemove) {
     function onQueueStateUpdate(queueState) {
@@ -80,7 +77,7 @@ var requestSetQueue = function() {
   }
 
   function showFailedToQueueView(error) {
-    queueView.innerText = 'Failed to queue!';
+    queueView.innerHTML = 'Failed to queue!';
   }
 
   function showEngagedView(engagement) {
