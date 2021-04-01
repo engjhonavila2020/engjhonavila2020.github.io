@@ -34,6 +34,33 @@ var requestEngagementOnclick = function(){
         });
       });
 }
+
+var requestSetQueue = function() {
+  sm.getApi({version: 'v1'}).then(function(salemove) {
+    function onQueueStateUpdate(queueState) {
+      if (queueState.state === queueState.QUEUE_STATES.CAN_QUEUE) {
+        queueView.addEventListener('click', onClickToQueue);
+        queueView.innerText = 'Click to queue.';
+      } else if (queueState.state === queueState.QUEUE_STATES.QUEUED) {
+        showWaitingView(queueState.ticket);
+        salemove.getQueueWaitDuration()
+          .then(showWaitingViewWithTimer(queueState.ticket));
+      } else if (queueState.state === queueState.QUEUE_STATES.CANNOT_QUEUE) {
+        queueView.removeEventListener('click', onClickToQueue);
+        queueView.innerText = 'Cannot queue.';
+      }
+    }
+
+    function onClickToQueue() {
+      salemove.queueForEngagement('text').catch(showFailedToQueueView);
+    }
+
+    salemove.addEventListener(salemove.EVENTS.QUEUE_STATE_UPDATE, onQueueStateUpdate);
+    salemove.addEventListener(salemove.EVENTS.ENGAGEMENT_START, showEngagedView);
+    salemove.addEventListener(salemove.EVENTS.ENGAGEMENT_END, showNotEngagedView);
+  });
+  
+}
 console.log("get userr info");
 var res = userData();  
 
