@@ -48,7 +48,13 @@ var requestSetQueue = function() {
       } else if (queueState.state === queueState.QUEUE_STATES.QUEUED) {
         showWaitingView(queueState.ticket);
         salemove.getQueueWaitDuration()
-          .then(showWaitingViewWithTimer(queueState.ticket));
+       
+
+          .then( value => {
+            showWaitingViewWithTimer(queueState.ticket); // Success!
+          }, reason => {
+            console.error(reason);
+          });
       } else if (queueState.state === queueState.QUEUE_STATES.CANNOT_QUEUE) {
         queueView.removeEventListener('click', onClickToQueue);
         queueView.innerHTML = 'Cannot queue.';
@@ -100,6 +106,7 @@ var requestSetQueue = function() {
   }
   
 }
+//---------
 console.log("get userr info");
 var res = userData();  
 
