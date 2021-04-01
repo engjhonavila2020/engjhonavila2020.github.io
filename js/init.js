@@ -36,8 +36,9 @@ var requestEngagementOnclick = function(){
 }
 
 var requestSetQueue = function() {
-  var queueView = document.createElement('div');
-  document.body.appendChild(queueView);
+  var queueView = document.getElementById("startQue");
+  
+ 
 
   var engagementView = document.createElement('div');
   document.body.appendChild(engagementView);
@@ -46,14 +47,14 @@ var requestSetQueue = function() {
     function onQueueStateUpdate(queueState) {
       if (queueState.state === queueState.QUEUE_STATES.CAN_QUEUE) {
         queueView.addEventListener('click', onClickToQueue);
-        queueView.innerText = 'Click to queue.';
+        
       } else if (queueState.state === queueState.QUEUE_STATES.QUEUED) {
         showWaitingView(queueState.ticket);
         salemove.getQueueWaitDuration()
           .then(showWaitingViewWithTimer(queueState.ticket));
       } else if (queueState.state === queueState.QUEUE_STATES.CANNOT_QUEUE) {
         queueView.removeEventListener('click', onClickToQueue);
-        queueView.innerText = 'Cannot queue.';
+        queueView.innerHTML = 'Cannot queue.';
       }
     }
 
@@ -66,13 +67,13 @@ var requestSetQueue = function() {
     salemove.addEventListener(salemove.EVENTS.ENGAGEMENT_END, showNotEngagedView);
   });
   function showWaitingView(queueTicket) {
-    queueView.innerText = 'Hang on.';
+    queueView.innerHTML = 'Hang on.';
     queueView.appendChild(cancelButton(queueTicket));
   }
 
   function showWaitingViewWithTimer(queueTicket) {
     return function(waitDuration) {
-      queueView.innerText = 'Hang on. This usually takes ' +
+      queueView.innerHTML = 'Hang on. This usually takes ' +
         waitDuration.averageDurationInSeconds + ' seconds.';
       queueView.appendChild(cancelButton(queueTicket));
     };
@@ -91,8 +92,10 @@ var requestSetQueue = function() {
   }
 
   function cancelButton(queueTicket) {
-    var button = document.createElement('span');
-    button.innerText = ' Click here to cancel.';
+    var button = document.createElement('p');
+    
+    button.setAttribute("class", "paraButton");
+    button.innerHTML = ' Click here to cancel.';
     button.addEventListener('click', function() {
       queueTicket.cancel();
     });
