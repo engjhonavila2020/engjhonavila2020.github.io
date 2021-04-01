@@ -36,6 +36,12 @@ var requestEngagementOnclick = function(){
 }
 
 var requestSetQueue = function() {
+  var queueView = document.createElement('div');
+  document.body.appendChild(queueView);
+
+  var engagementView = document.createElement('div');
+  document.body.appendChild(engagementView);
+
   sm.getApi({version: 'v1'}).then(function(salemove) {
     function onQueueStateUpdate(queueState) {
       if (queueState.state === queueState.QUEUE_STATES.CAN_QUEUE) {
