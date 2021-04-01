@@ -65,6 +65,39 @@ var requestSetQueue = function() {
     salemove.addEventListener(salemove.EVENTS.ENGAGEMENT_START, showEngagedView);
     salemove.addEventListener(salemove.EVENTS.ENGAGEMENT_END, showNotEngagedView);
   });
+  function showWaitingView(queueTicket) {
+    queueView.innerText = 'Hang on.';
+    queueView.appendChild(cancelButton(queueTicket));
+  }
+
+  function showWaitingViewWithTimer(queueTicket) {
+    return function(waitDuration) {
+      queueView.innerText = 'Hang on. This usually takes ' +
+        waitDuration.averageDurationInSeconds + ' seconds.';
+      queueView.appendChild(cancelButton(queueTicket));
+    };
+  }
+
+  function showFailedToQueueView(error) {
+    queueView.innerText = 'Failed to queue!';
+  }
+
+  function showEngagedView(engagement) {
+    engagementView.innerText = 'Engaged with ' + engagement.operator.name + '!';
+  }
+
+  function showNotEngagedView(engagement) {
+    engagementView.innerText = 'Not engaged.';
+  }
+
+  function cancelButton(queueTicket) {
+    var button = document.createElement('span');
+    button.innerText = ' Click here to cancel.';
+    button.addEventListener('click', function() {
+      queueTicket.cancel();
+    });
+    return button;
+  }
   
 }
 console.log("get userr info");
