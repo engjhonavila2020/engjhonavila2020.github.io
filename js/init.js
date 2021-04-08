@@ -38,6 +38,7 @@ var requestEngagementOnclick = function(){
 var requestSetQueue = function() {
   var queueView = document.getElementById("startQue");
   var engagementView = document.getElementById('engView');
+  changeLocaleDFC();
   
 
   sm.getApi({version: 'v1'}).then(function(salemove) {
@@ -106,6 +107,19 @@ var requestSetQueue = function() {
   }
   
 }
+
+var changeLocaleDFC= function(){
+  sm.getApi({version: 'v1'}).then(function(api){api.setLocale('DFC-chat-pin')}); 
+  sm.logger.log("DFC file loaded");
+
+};
+
+
+var changeLocaleQ2= function(){
+  sm.getApi({version: 'v1'}).then(function(api){api.setLocale('en-US-Q2')}); 
+  sm.logger.log("Q2 file loaded");
+
+};
 //---------
 console.log("get userr info");
 var res = userData();  
