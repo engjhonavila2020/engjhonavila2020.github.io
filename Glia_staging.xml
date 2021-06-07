@@ -1,0 +1,15 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="http://www.okta.com/exkrpoh0zeAq8h7dh0x7">
+<md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:X509Data>
+<ds:X509Certificate>MIIDmjCCAoKgAwIBAgIGAV2m5S+nMA0GCSqGSIb3DQEBCwUAMIGNMQswCQYDVQQGEwJVUzETMBEG A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU MBIGA1UECwwLU1NPUHJvdmlkZXIxDjAMBgNVBAMMBXNlZmN1MRwwGgYJKoZIhvcNAQkBFg1pbmZv QG9rdGEuY29tMB4XDTE3MDgwMzA2NTkyNFoXDTI3MDgwMzA3MDAyM1owgY0xCzAJBgNVBAYTAlVT MRMwEQYDVQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQ0wCwYDVQQKDARP a3RhMRQwEgYDVQQLDAtTU09Qcm92aWRlcjEOMAwGA1UEAwwFc2VmY3UxHDAaBgkqhkiG9w0BCQEW DWluZm9Ab2t0YS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCSdJkpr1jv7YLY 6/WPuoEPzCOFI2ek3Od5cFVHr4xkc5WSQm27t/UC7j4zKiQTXbrxBw7Ag6vVnsHu/mGxbcYwAYvN MCg23Dk1SucrWerW5AriiQzJC6Q3NxNTEiX71HuvBaPHmCODs38SgP+E+h67RER61wiXxij73PaO R3URHxbr8LzAyuaWjgGH05bReMqFtvenWhwn1ICeZ4v8ny9YZ4stnfanGbZARXc7ly5fMrwNFDC4 dKMpMq0fUwuXAWBKAhrMLgoCD0A6XDPXy1G8yfuMI6vY7hH2tp6hyLWKlVW/nSlBy1XzYBMyDbcV 37PhtWErZ8JT/QsGuYV6yWKVAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAFPo0OYcz7ME56262gnb u4pLTC+1mKfm2+JagXgvPJ2eTnPJ0CeNcLjmLd251Ta6V9ohIAQa6Np7ec88d+xfu+Pslfz8QKdV LbXoOVygDEw8TZKk4dmRByr8Bl4Ammu6hbC7VK50L8w+vrZjSDdB1VAJUe6TKF5/OJEXmNnyPN3O Mis99ctyEv0OuyOFWgaJehhQ5EN0TkFyCsD+RLue1NWikjyjvqkzLuTYFgembvU3vE4+Z9hBAFXZ oUOpGks2VgoS/HItqh9712Zn00d+s9AR+9RBvMJOJBUjPqp5Fp7Vk7cDInAB2g11S8yig9QCUOVB af+agYGhF/uRmJchKFo=</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sefcu.okta.com/app/sefcu_gliastaging_1/exkrpoh0zeAq8h7dh0x7/sso/saml"/>
+<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sefcu.okta.com/app/sefcu_gliastaging_1/exkrpoh0zeAq8h7dh0x7/sso/saml"/>
+</md:IDPSSODescriptor>
+</md:EntityDescriptor>

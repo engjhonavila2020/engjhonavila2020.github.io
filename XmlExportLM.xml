@@ -1,0 +1,37 @@
+<LmPiClaimsLiveChat>
+    <id>{engagement_id}</id>    <!-- Unique Chat ID-->
+    <DocumentType>Correspondence</DocumentType>    <!-- Constant value-->
+    <DocumentSubType>Chat Transcript</DocumentSubType>    <!-- Constant value-->    <!-- Dates are in ISO8601 -->
+    <DocumentDate>{engagement_started_at}</DocumentDate>
+    <ChatTranscript>
+        <session>
+            <id>{engagement_id}</id>            <!-- Unique Chat ID-->
+            <source>Liberty Mutual Safeco MMA</source>            <!-- SM:Constant value-->
+            <provider>
+                <contact>{operator_names}                    <!-- SM:Note that if the engagement is transfered it will produce more than one operator name--></contact>
+            </provider>            <!-- Dates are in ISO8601 -->
+            <requestdate>{engagement_started_at}</requestdate>            <!-- duration is in seconds -->
+            <duration>{engagement_duration}</duration>
+            <startedBy>{engagement_type}</startedBy>
+            <endedBy>{end_reason}</endedBy>
+        </session>
+        <visitor>
+            <contact>
+                <name>{visitor_name}</name>
+                <email>{visitor_email}</email>
+                <phone>{visitor_phone}</phone>
+                <notes>{notes}</notes>
+            </contact>
+        </visitor>
+        <customer>
+            <contact>
+                <name>{visitor_name}</name>
+            </contact>
+            <transcript>
+                <chat>{chat_transcript}</chat>
+            </transcript>
+            <claim>
+                <custom_fields>{custom_fields}</custom_fields>                <!-- This will list all the custom keys and custom values--></claim>
+        </customer>
+    </ChatTranscript>
+</LmPiClaimsLiveChat>
