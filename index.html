@@ -1,127 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Template Site</title>
 
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Template Site</title>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
-    <!-- Materialize icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script"
-      rel="stylesheet"
-    />
-    
-    <script type="text/javascript" src="js/init.js"></script>
-    <link rel="stylesheet" href="css/pagestyle.css" />
+  <!-- Materialize icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-189789814-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-189789814-1");
-    </script>
-        <script>
-          var installGlia = function(siteId, callback) {
-          var gliaIntegrationScriptUrl = 'https://api.glia.com/salemove_integration.js?site_id=' + siteId;
-          var scriptElement = document.createElement('script');
-        
-          scriptElement.async = 1;
-          scriptElement.src = gliaIntegrationScriptUrl;
-          scriptElement.type = 'text/javascript';
-          if (typeof(callback) === 'function') {
-            scriptElement.addEventListener('load', callback);
-          }
-          
-          document.body.append(scriptElement);
-        };
-        
-        /* 
-        siteId is a UUID for your site that needs to be requested from your Client Success Manager 
-        or via our Service Desk https://salemove.atlassian.net/servicedesk/customer/portal/1 
-        */
-        var siteId = '2ef2e3a5-4593-4d9d-994e-f827243cc228'; 
-        
-        installGlia(siteId, function(){
-          // Any post-install configuration
-        });
-            </script>
-  </head>
-  <body>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script" rel="stylesheet" />
 
-    <div>
-      <div id="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">Our story</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </div>
+  <script type="text/javascript" src="js/init.js"></script>
+  <link rel="stylesheet" href="css/pagestyle.css" />
 
-
-      <div class="container">
-        <h1 class="center">The Retro Art Gallery</h1>
-
-        <!-- Photo credit to Jhon Av -->
-        <img class="responsive-img" src="images/tartu.png" alt="Antarctica" />
-        <!-- Don't change me -->
-        <p>
-          Straight from the past, the art of the early computer age makes a
-          comeback as classlical, master pieces of digital art.
-        </p>
-        <div id="imgIcon">
-          <img src="cubeCollab10-bread.png" alt="alternatetext" />
-          <p id="talkText"      
-             data-sm-show-media-selection-on="click"
-             class = "paraButton"
-             href="javascript:void(0);">
-             Let's Talk
-          </p>      
-        </div>
-        <div>
-          <h1>Test JS SDK</h1>
-          <p id="startEng" class = "paraButton" onclick="requestEngagementOnclick()">Request Engagement</p>
-          <p id="startQue" class = "paraButton" onclick="requestSetQueue()">Queue for Engagement</p>
-          <p id="engView" >--</p>
-          <p id="cancelBtn" class = "paraButton" >Cancel</p>
-        </div>
-        <div>
-          <p >Drop down menu</p>
-        <select class = "left" id="sel">
-            <option></option>
-            <option>2</option>
-            <option>22</option>
-            <option>222</option>
-        </select>
-        </div>
-      
-        <p class="right masterOfWisdom">" Lien The Alien "</p>
-       
-        
-      </div>
-    </div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189789814-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-189789814-1");
+  </script>
   
-  </body>
+</head>
+
+<body>
+
+  <div>
+    <div id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+
+
+    <div class="container">
+      <h1 class="center">The Retro Art Gallery</h1>
+
+      <!-- Photo credit to Jhon Av -->
+      <img class="responsive-img" src="images/tartu.png" alt="Antarctica" />
+      <!-- Don't change me -->
+      <p>
+        Straight from the past, the art of the early computer age makes a
+        comeback as classlical, master pieces of digital art.
+      </p>
+      <div id="imgIcon">
+        <img src="cubeCollab10-bread.png" alt="alternatetext" />
+        <p id="talkText" data-sm-show-media-selection-on="click" class="paraButton" href="javascript:void(0);">
+          Let's Talk
+        </p>
+      </div>
+      <div>
+        <h1>Test JS SDK</h1>
+        <p id="startEng" class="paraButton" onclick="requestEngagementOnclick()">Request Engagement</p>
+        <p id="startQue" class="paraButton" onclick="requestSetQueue()">Queue for Engagement</p>
+        <p id="engView">--</p>
+        <p id="cancelBtn" class="paraButton">Cancel</p>
+      </div>
+      <div>
+        <p>Drop down menu</p>
+        <select class="left" id="sel">
+          <option></option>
+          <option>2</option>
+          <option>22</option>
+          <option>222</option>
+        </select>
+      </div>
+
+      <p class="right masterOfWisdom">" Lien The Alien "</p>
+
+
+    </div>
+  </div>
+
+</body>
+
 </html>
