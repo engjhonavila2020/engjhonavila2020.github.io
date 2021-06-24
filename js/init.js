@@ -29,10 +29,10 @@ or via our Service Desk https://salemove.atlassian.net/servicedesk/customer/port
 */
 var siteId = '2ef2e3a5-4593-4d9d-994e-f827243cc228';
 
-installGlia(siteId, function () {
+/*installGlia(siteId, function () {
   // Any post-install configuration
   console.log("siteId "+siteId);
-});
+});*/
 
 
 
