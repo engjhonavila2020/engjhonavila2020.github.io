@@ -9,7 +9,7 @@
     
  };
 
- var installGlia = function (siteId, callback) {
+ /*var installGlia = function (siteId, callback) {
   var gliaIntegrationScriptUrl = 'https://api.glia.com/salemove_integration.js?site_id=' + siteId;
   var scriptElement = document.createElement('script');
 
@@ -21,7 +21,7 @@
   }
 
   document.head.append(scriptElement);
-};
+};*/
 
 /* 
 siteId is a UUID for your site that needs to be requested from your Client Success Manager 
